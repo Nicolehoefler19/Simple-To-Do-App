@@ -1,0 +1,29 @@
+body{
+    background: #1f1f1f;
+    color: #ffffff;
+    font-family: Roboto;
+}
+
+.task-col{
+    margin-right: -20px !important;
+}
+
+.task-field{
+    height: 35px;
+}
+
+.btn-success{
+    width: 100px;
+}
+
+.btn-edit{
+    background: #0099ff;
+    color: #ffffff;
+}
+
+.col-sm-8{
+    max-width: 25%;
+}
+
+
+

@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/index.css">
-    <script src="./assets/js/script.js"></script>
     <title>Simple To Do App</title>
 </head>
 <body>
@@ -25,26 +24,40 @@
         <div class="row">
             <p>1. List your tasks in the input field below. <br> 2. You can edit/delete/check your tasks. <br> 3. Click "DONE!" to see something cool. (Just when you finished your tasks or you have no tasks in your list).</p>
         </div>
-
-        <div class="row">
-            <div class="col-sm-2">
-                <input type="text" placeholder="Type in your task...">
+        <br><br>
+        <div class="row justify-content-center">
+            <div class="col-sm-3" class="task-col">
+                <input type="text" class="task-field" id="task-field" placeholder="Type in your task..." value="">
             </div>
             <div class="col-sm-1">
-                <button type="button" class="btn btn-success">Add</button>
+                <button type="button" class="btn btn-success" id="add-button">Add</button>
             </div>
         </div>
+
         <div class="row">
             <h3>Your current tasks:</h3>
         </div>
+
         <div class="row">
-            <div class="col-sm-3">Aufgabe 1</div>
-            <div class="col-sm-1">Edit <i class='far fa-edit'></i></div>
-            <div class="col-sm-1">Delete <i class="far fa-trash-alt"></i></div>
+            <div class="col-sm-8">
+                <div class="row task-row">
+                    <div class="col-1" id="checkbox-col">             
+                    </div>
+                    <div class="col-2 task-list" id="your-tasks">
+                    </div> 
+                </div>
+                  
+            </div>
+
+        </div>
+        <br><br>
+
+        <div class="row justify-content-center">
+            <button>DONE!</button>
         </div>
 
     </div>
-
+    <script src="./assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
