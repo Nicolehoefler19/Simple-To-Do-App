@@ -7,6 +7,10 @@ body{
 .task-col{
     margin-right: -20px !important;
 }
+.task-row{
+    min-height: 50px;
+    min-width: 100%;
+}
 
 .task-field{
     height: 35px;
@@ -17,12 +21,34 @@ body{
 }
 
 .btn-edit{
-    background: #0099ff;
-    color: #ffffff;
+    background: none;
+    color: #ff0000;
+    margin-left: 20px;
+
 }
 
-.col-sm-8{
-    max-width: 25%;
+.input-p{
+    margin: 5px;
+}
+
+.btn-edit:hover{
+    color: #ff9090;
+}
+
+
+input[type=checkbox]{
+    margin: 10px;
+      /* Double-sized Checkboxes */
+    -ms-transform: scale(1.5); /* IE */
+    -moz-transform: scale(1.5); /* FF */
+    -webkit-transform: scale(1.5); /* Safari and Chrome */
+    -o-transform: scale(1.5); /* Opera */
+    transform: scale(1.5);
+    padding: 10px;
+    margin-left: 20px;
+}
+input:checked + .input-p{
+    text-decoration: line-through !important;
 }
 
 
