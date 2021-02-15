@@ -7,7 +7,7 @@ add_btn.addEventListener('click', function () {
     empty_place.innerHTML += '<div class="row task-row justify-content-center" id="' + input_field_value + '">' +
         '<input type="checkbox" name="checked" id="checked">' +
         '<label class="input-p">' + input_field_value + '</label>' +
-        '<button onclick="removeDocument(\'' + input_field_value + '\')" class="btn btn-edit">Delete <i class="fa fa-trash-o"></i></button>' +
+        '<a onclick="removeDocument(\'' + input_field_value + '\')" class="btn btn-edit">Delete <i class="fa fa-trash-o"></i></a>' +
         '</div>';
 });
 function removeDocument(text) {

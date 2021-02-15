@@ -19,32 +19,28 @@
                 This is a Simple To Do App!
             </h1>
         </div>
-        <div class="row">
+        <!-- <div class="row">
             <h2>How it works:</h2>        
         </div>
         <div class="row">
             <p>1. List your tasks in the input field below. <br> 2. You can edit/delete/check your tasks. <br> 3. Click "DONE!" to see something cool. (Just when you finished your tasks or you have no tasks in your list).</p>
-        </div>
+        </div> -->
         <br><br>
         <div class="row justify-content-center">
             <div class="col-sm-3" class="task-col">
-                <input type="text" class="task-field" id="task-field" placeholder="Type in your task..." value="">
+                <input type="text" class="task-field" id="task-field" onfocus="this.value = ''" placeholder="Type in your task..." value="">
             </div>
             <div class="col-sm-1">
                 <button type="button" class="btn btn-success" id="add-button">Add</button>
             </div>
         </div>
+        <br><br>
         <div class="row justify-content-center">
             <h3>Your current tasks:</h3>
         </div>
 
         <div class="row justify-content-center" id="your-tasks">
 
-        </div>
-        <br><br>
-
-        <div class="row justify-content-center">
-            <button>DONE!</button>
         </div>
 
     </div>

@@ -3,14 +3,13 @@ var empty_place: HTMLElement = document.getElementById('your-tasks');
 var checkbox: HTMLElement = document.getElementById('checkbox-col');
 var complete_task_row: NodeListOf<Element>;
 
-add_btn.addEventListener('click', function(){
+add_btn.addEventListener('click', function (){
     var input_field_value = (document.getElementById('task-field') as HTMLInputElement).value;    
     empty_place.innerHTML += '<div class="row task-row justify-content-center" id="'+input_field_value+'">' +
                             '<input type="checkbox" name="checked" id="checked">' +
                             '<label class="input-p">'+input_field_value+'</label>'+
-                            '<button onclick="removeDocument(\''+input_field_value+'\')" class="btn btn-edit">Delete <i class="fa fa-trash-o"></i></button>' +
+                            '<a onclick="removeDocument(\''+input_field_value+'\')" class="btn btn-edit">Delete <i class="fa fa-trash-o"></i></a>' +
                             '</div>';
-
 });
 
 function removeDocument(text: string){
